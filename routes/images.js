@@ -25,8 +25,10 @@ module.exports = function (app) {
 
 				var pathArray = e.split('/');
 				var category = pathArray[pathArray.length - 2];
-				var title = pathArray[pathArray.length - 1];
-				var id = title.substring(0, title.length - 4);
+				var fileName = pathArray[pathArray.length - 1];
+				var name = fileName.substring(0, fileName.length - 4);
+				var id = name;
+				var title = name;
 
 				Images.findOne({title: title, category: category}).lean().exec(function (err, image) {
 					if (err || image !== null) {
@@ -34,6 +36,7 @@ module.exports = function (app) {
 					}
 					var i = new Images();
 					i.title = title;
+					i.fileName = name;
 					i.category = category;
 					i.id = id;
 					i.save(function (err, image) {

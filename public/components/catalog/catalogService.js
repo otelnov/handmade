@@ -4,10 +4,15 @@ angular.module('hm.services')
 		function ($http) {
 
 			var service = {
-				getItems: function () {
-					return [
-						{}
-					];
+				getItems: function (cb) {
+					$http.get('/api/images').success(function (data) {
+						if (data.error) {
+							return cb(true);
+						}
+						cb(false, data.images)
+					}).error(function () {
+						cb(true)
+					});
 				}
 			};
 

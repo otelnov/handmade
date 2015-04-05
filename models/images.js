@@ -7,6 +7,7 @@ module.exports = function () {
 	var ImagesSchema = new Schema({
 		category: String,
 		title: String,
+		fileName: String,
 		id: String,
 		createdAt: {type: Date, default: Date.now}
 	});
