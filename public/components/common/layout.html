@@ -1,7 +1,15 @@
-<ui-view name="header"></ui-view>
-
 <div class="container">
-  <ui-view></ui-view>
-</div>
+  <header class="clearfix">
+    <ui-view name="header"></ui-view>
+  </header>
 
-<ui-view name="footer"></ui-view>
+  <section class="main">
+    <div class="wrapper">
+      <ui-view></ui-view>
+    </div>
+  </section>
+
+  <footer class="clearfix">
+    <ui-view name="footer"></ui-view>
+  </footer>
+</div>

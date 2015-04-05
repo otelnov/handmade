@@ -1,16 +1,27 @@
-<div class="container">
-  <div class="page-header text-center">
-    <h1>HandMade</h1>
-    <ul class="nav nav-pills">
-      <li role="presentation" ng-class="{active: $state.includes('hm.home')}">
-        <a href ui-sref="hm.home">Home</a>
-      </li>
-      <li role="presentation" ng-class="{active: $state.includes('hm.catalog')}">
-        <a href ui-sref="hm.catalog">Catalog</a>
-      </li>
-      <li role="presentation" ng-class="{active: $state.includes('hm.contacts')}">
-        <a href ui-sref="hm.contacts">Contacts</a>
-      </li>
-    </ul>
-  </div>
+<!--<div class="container">-->
+  <!--<div class="page-header text-center">-->
+    <!--<h1>HandMade</h1>-->
+    <!--<ul class="nav nav-pills">-->
+      <!--<li role="presentation" ng-class="{active: $state.includes('hm.home')}">-->
+        <!--<a href ui-sref="hm.home">Home</a>-->
+      <!--</li>-->
+      <!--<li role="presentation" ng-class="{active: $state.includes('hm.catalog')}">-->
+        <!--<a href ui-sref="hm.catalog">Catalog</a>-->
+      <!--</li>-->
+      <!--<li role="presentation" ng-class="{active: $state.includes('hm.contacts')}">-->
+        <!--<a href ui-sref="hm.contacts">Contacts</a>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</div>-->
+
+<h1>Handmade <span>some description</span></h1>
+
+<nav class="codrops-demos">
+  <a ng-class="{'current-demo': $state.includes('hm.home')}" href ui-sref="hm.home">Home</a>
+  <a ng-class="{'current-demo': $state.includes('hm.contacts')}" href ui-sref="hm.contacts">Contacts</a>
+</nav>
+
+<div class="support-note">
+  <span class="note-ie">Sorry, only modern browsers.</span>
 </div>

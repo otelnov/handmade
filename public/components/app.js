@@ -11,7 +11,7 @@ var app = angular.module('hm.app', [
 	'ui.router',
 	'ngResource',
 	'ngSanitize',
-	'ui.bootstrap'
+	//'ui.bootstrap'
 ]);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
@@ -60,11 +60,11 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 				templateUrl: '/components/home/home.html',
 				controller: 'HomeController'
 			})
-			.state('hm.catalog', {
-				url: '/catalog',
-				templateUrl: '/components/catalog/catalog.html',
-				controller: 'CatalogController'
-			})
+			//.state('hm.catalog', {
+			//	url: '/catalog',
+			//	templateUrl: '/components/catalog/catalog.html',
+			//	controller: 'CatalogController'
+			//})
 			.state('hm.category', {
 				url: '/catalog/:catName',
 				templateUrl: '/components/catalog/category.html',
@@ -81,4 +81,3 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 				controller: 'ContactsController'
 			});
 	}]);
-

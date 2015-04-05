@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="hm.app">
+<html ng-app="hm.app" class="no-js">
 <head>
   <!--<base href="/">-->
   <meta charset="utf-8">
@@ -7,9 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" media="all"/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <!--<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"/>-->
+  <!--<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" media="all"/>-->
+  <link rel="stylesheet" href="css/demo.css"/>
+  <link rel="stylesheet" href="css/stapel.css"/>
+  <link rel="stylesheet" href="css/custom.css"/>
+  <script type="application/javascript" src="components/common/modernizr.custom.63321.js"></script>
+
+  <!--<link rel="stylesheet" href="css/main.css"/>-->
 
   <title>HandMade</title>
 
@@ -40,6 +45,9 @@
 
   <ui-view></ui-view>
 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="application/javascript" src="components/common/jquery.stapel.js"></script>
+
   <!--angular libs-->
   <script type="application/javascript" src="libs/angular/angular.min.js"></script>
   <!--<script type="application/javascript" src="libs/angular-touch/angular-touch.min.js"></script>-->
@@ -48,7 +56,7 @@
   <script type="application/javascript" src="libs/angular-resource/angular-resource.min.js"></script>
   <script type="application/javascript" src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
   <!--<script type="application/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>-->
-  <script type="application/javascript" src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <!--<script type="application/javascript" src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>-->
 
   <!--core-->
   <script type="text/javascript" src="components/app.js"></script>
@@ -61,7 +69,7 @@
 
   <script type="text/javascript" src="components/home/homeController.js"></script>
 
-  <script type="text/javascript" src="components/catalog/catalogController.js"></script>
+  <!--<script type="text/javascript" src="components/catalog/catalogController.js"></script>-->
   <script type="text/javascript" src="components/catalog/categoryController.js"></script>
   <script type="text/javascript" src="components/catalog/itemController.js"></script>
 
