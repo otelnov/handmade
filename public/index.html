@@ -1,0 +1,68 @@
+<!doctype html>
+<html ng-app="hm.app">
+<head>
+  <!--<base href="/">-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" media="all"/>
+  <link rel="stylesheet" href="css/main.css"/>
+
+  <title>HandMade</title>
+
+  <!-- for Google -->
+  <meta name="description" content="Save and manage your data in one place." />
+  <meta name="keywords" content="passwords, links, images, todo, notes, link manager" />
+  <meta name="author" content="Oleksandr Telnov" />
+  <meta name="copyright" content="" />
+  <meta name="application-name" content="Jse.me" />
+
+  <!-- for Facebook -->
+  <meta property="fb:app_id" content="1492212150994132" />
+  <meta property="og:title" content="Jse.me" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://jse.me/img/logo_big.png" />
+  <meta property="og:url" content="https://jse.me" />
+  <meta property="og:description" content="Save and manage your data in one place." />
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Jse.me" />
+  <meta name="twitter:description" content="Save and manage your data in one place." />
+  <meta name="twitter:image" content="https://jse.me/img/logo_big.png" />
+
+</head>
+
+<body>
+
+  <ui-view></ui-view>
+
+  <!--angular libs-->
+  <script type="application/javascript" src="libs/angular/angular.min.js"></script>
+  <!--<script type="application/javascript" src="libs/angular-touch/angular-touch.min.js"></script>-->
+  <!--<script type="application/javascript" src="libs/angular-gestures/gestures.min.js"></script>-->
+  <script type="application/javascript" src="libs/angular-sanitize/angular-sanitize.min.js"></script>
+  <script type="application/javascript" src="libs/angular-resource/angular-resource.min.js"></script>
+  <script type="application/javascript" src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!--<script type="application/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>-->
+  <script type="application/javascript" src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <!--core-->
+  <script type="text/javascript" src="components/app.js"></script>
+
+  <!--common-->
+  <!--<script type="text/javascript" src="components/common/commonService.js"></script>-->
+  <!--<script type="text/javascript" src="components/common/modalController.js"></script>-->
+  <script type="text/javascript" src="components/common/headerController.js"></script>
+  <script type="text/javascript" src="components/common/footerController.js"></script>
+
+  <script type="text/javascript" src="components/home/homeController.js"></script>
+  <script type="text/javascript" src="components/catalog/catalogController.js"></script>
+  <script type="text/javascript" src="components/catalog/categoryController.js"></script>
+  <script type="text/javascript" src="components/catalog/itemController.js"></script>
+
+</body>
+</html>

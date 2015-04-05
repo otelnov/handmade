@@ -1,0 +1,44 @@
+<div class="row links">
+  <div class="item" ng-repeat="link in links">
+    <div class="thumbnail" ng-class="newClass($index)">
+
+
+      <div class="caption">
+        <h1>{{link.title}}</h1>
+      </div>
+
+      <div class="caption text-center">
+        <img class="img-rounded" ng-src="/uploads/{{link.user}}/links/{{link.short}}.jpg">
+      </div>
+
+      <div class="caption">
+
+        <p>{{link.description}}</p>
+
+        <p>
+          <tags-input ng-model="link.tags"
+                      on-tag-added="addTag(link, $tag)"
+                      on-tag-removed="removeTag(link, $tag)"
+                      min-length="2"
+                      add-on-comma="false"
+                      display-property="name"
+                      class="ti-input-sm">
+            <auto-complete min-length="2" source="loadTags($query)"></auto-complete>
+          </tags-input>
+        </p>
+
+        <!--<p>-->
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-default btn-block">Copy to buffer</button>
+          </div>
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-default btn-block">Remove</button>
+          </div>
+        </div>
+        <!--</p>-->
+
+      </div>
+    </div>
+  </div>
+</div>
