@@ -14,6 +14,17 @@ module.exports = function (app) {
 		});
 	});
 
+	router.get('/api/image/:category/:id', function (req, res) {
+		var id = req.params.id;
+		var category = req.params.category;
+		Images.findOne({
+			id: id,
+			category: category
+		}).lean().exec(function (err, image) {
+			res.json({error: err, image: image});
+		});
+	});
+
 	router.post('/api/images', function (req, res) {
 		var path = __dirname + '/../public/uploads/catalog';
 		dir.paths(path, function (err, paths) {

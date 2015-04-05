@@ -13,6 +13,16 @@ angular.module('hm.services')
 					}).error(function () {
 						cb(true)
 					});
+				},
+				getItem: function (data, cb) {
+					$http.get('/api/image/' + data.category + '/' + data.id).success(function (data) {
+						if (data.error) {
+							return cb(true);
+						}
+						cb(false, data.image)
+					}).error(function () {
+						cb(true)
+					});
 				}
 			};
 
