@@ -9,8 +9,8 @@ angular.module('hm.modules', [
 var app = angular.module('hm.app', [
 	'hm.modules',
 	'ui.router',
-	'ngResource',
-	'ngSanitize',
+	//'ngResource',
+	//'ngSanitize',
 	//'ui.bootstrap'
 ]);
 
@@ -51,7 +51,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 					},
 					'footer@hm': {
 						templateUrl: '/components/common/footer.html',
-						controller: 'FooterController'
+						//controller: 'FooterController'
 					}
 				}
 			})

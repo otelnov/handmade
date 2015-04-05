@@ -440,7 +440,7 @@
 		},
 		_setItemsPosition : function() {
 
-			var accumL = 0, accumT = 0, 
+			var accumL = 0, accumT = 0,
 				l, t, ml = 0,
 				lastItemTop = 0;
 
