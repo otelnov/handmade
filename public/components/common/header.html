@@ -1,1 +1,16 @@
-head
+<div class="container">
+  <div class="page-header text-center">
+    <h1>HandMade</h1>
+    <ul class="nav nav-pills">
+      <li role="presentation" ng-class="{active: $state.includes('hm.home')}">
+        <a href ui-sref="hm.home">Home</a>
+      </li>
+      <li role="presentation" ng-class="{active: $state.includes('hm.catalog')}">
+        <a href ui-sref="hm.catalog">Catalog</a>
+      </li>
+      <li role="presentation" ng-class="{active: $state.includes('hm.contacts')}">
+        <a href ui-sref="hm.contacts">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</div>

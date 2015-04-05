@@ -74,6 +74,11 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 				url: '/catalog/:catName/:itemName',
 				templateUrl: '/components/catalog/item.html',
 				controller: 'ItemController'
+			})
+			.state('hm.contacts', {
+				url: '/contacts',
+				templateUrl: '/components/contacts/contacts.html',
+				controller: 'ContactsController'
 			});
 	}]);
 
